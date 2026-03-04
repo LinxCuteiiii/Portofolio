@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio and branding — Your Name" />
+  <style>
+    :root{--bg:#0f1724;--card:#111827;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.4;color:#e6eef6;background:linear-gradient(180deg,#071023 0%, #041124 100%);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#021224;font-weight:700;font-size:20px}
+    h1{font-size:20px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+    nav{display:flex;gap:12px}
+    a.btn{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;border:1px solid transparent;font-size:14px}
+    a.btn:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;margin-bottom:32px}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .intro h2{margin:0 0 8px 0;font-size:26px}
+    .intro p{margin:0;color:var(--muted)}
+    .cta{margin-top:16px;display:flex;gap:10px}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021224;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .profile-stats{display:flex;gap:12px;margin-top:18px}
+    .stat{background:var(--glass);padding:10px;border-radius:10px;text-align:center;min-width:88px}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 6px 0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+    .contact-form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:#e6eef6}
+    input::placeholder,textarea::placeholder{color:rgba(230,238,246,0.45)}
+    button[type=submit]{background:var(--accent);border:none;color:#021224;padding:10px;border-radius:8px;font-weight:600}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.projects-grid{grid-template-columns:repeat(2,1fr)}.avatar{width:56px;height:56px}}
+    @media (max-width:580px){.projects-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar"><img src="/pic1.jpg" width="64" height="64"></div>
+        <div>
+          <h1>Muhammad Nabil</h1>
+          <div class="subtitle">Designer · Entrepreneur · English Teacher</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Crafting Business Solutions</h2>
+        <p>I’m a manager and designer for business advertisement and team work efficiency. I'm skill in the art of speaking and analysis of internasional documents for businesses.</p>
+        <div class="cta">
+          <a class="btn-primary" href="#contact">Work with me</a>
+          <a class="btn" href="#projects">View projects</a>
+        </div>
+        <div class="profile-stats">
+          <div class="stat">
+            <div style="font-weight:700">5+</div>
+            <div style="font-size:12px;color:var(--muted)">Years exp</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">10+</div>
+            <div style="font-size:12px;color:var(--muted)">Projects</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">Open</div>
+            <div style="font-size:12px;color:var(--muted)">To work</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h4 style="margin:0 0 6px 0">Top skills</h4>
+          <div class="skills">
+            <span class="skill">English</span>
+            <span class="skill">Manageent</span>
+            <span class="skill">Paper Analysis</span>
+            <span class="skill">Public Speaking</span>
+            <span class="skill">Islam</span>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <p class="subtitle">Available for freelance and full-time roles. Say hi — I respond quickly.</p>
+          <div style="margin-top:12px">
+            <strong>Email</strong>
+            <div><a class="btn" href="mailto:your.email@example.com">mnabil2805@gmail.com</a></div>
+          </div>
+          <div style="margin-top:12px">
+            <strong>Social</strong>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a class="btn" href="#">Instagram</a>
+              <a class="btn" href="#">GitHub</a>
+              <a class="btn" href="#">Telegram</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin:0 0 12px 0">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project card">
+          <h3>Project Alpha</h3>
+          <p class="subtitle">A modern desing web for business and marketing.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">Live</a> <a class="btn" href="#">Code</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>English Learning</h3>
+          <p class="subtitle">Online english learning together for kids under 15 years old every momday and wednesday.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">Docs</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>Manager Training</h3>
+          <p class="subtitle">A graduate from UI management and also a graduate from an international managemnt program by BI.
+          </p>
+          <div style="margin-top:10px"><a class="btn" href="#">View</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <div class="card">
+        <h2 style="margin-top:0">About me</h2>
+        <p class="subtitle">I combine design thinking with frontend engineering to ship polished user experiences. I enjoy working on performant apps, creating design systems, and mentoring junior engineers.</p>
+        <h3 style="margin-top:16px">How I work</h3>
+        <ul style="color:var(--muted)">
+          <li>User research and rapid prototyping</li>
+          <li>Component-driven design and development</li>
+          <li>Accessible, performant interfaces</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <div class="card">
+        <h2 style="margin-top:0">Get in touch</h2>
+        <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Muhammad Nabil — Built with care.</div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
